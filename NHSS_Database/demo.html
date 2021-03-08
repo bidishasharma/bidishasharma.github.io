@@ -61,7 +61,7 @@
 			Your browser does not support the audio element.
 			</audio></td>
 <td style="width: 301.333px;"><audio controls="controls">
-			  <source src="audio/speech_2289" type="audio/wav" />
+			  <source src="audio/speech_2289.wav" type="audio/wav" />
 			Your browser does not support the audio element.
 			</audio></td>
 </tr>
@@ -167,12 +167,9 @@
           <div class="flex-item flex-column">
 	<h2 class="add-top-margin">Speech-to-singing Conversion</h2>
             <p class="text add-top-margin">
-              We present a database of parallel recordings of speech and singing, collected and released by the Human Language Technology (HLT) laboratory at the National University of Singapore (NUS), that is called NUS-HLT Speak-Sing (NHSS) database.
-              
-              This database consists of recordings of sung vocals of English pop songs, the spoken counterpart of lyrics of the songs read by the singers in their natural reading manner, and manually prepared utterance-level and word-level annotations. The audio recordings in the NHSS database correspond to a total of 100 songs sung and spoken by 10 singers, resulting in total of 7 hours audio data. There are 5 male and 5 female singers, singing and reading the lyrics of 10 songs each.
-              
-              We release this database to the public for research activities.
+              We carry out another experiment on NHSS for speech-to-singing conversion , that serves as a reference system forreaders.   In  speech-to-singing  conversion,  we  convert  theread speech by a user (user’s speech) into his/her singingwith the same lyrical content.  The basic idea of speech-to-singing conversion is to transform the prosody and spectralfeatures from user’s speech to those of reference singing,while preserving speaker identity of the user.  In this work,we particularly focus on template-based speech-to-singingconversion,  where  we  keep  the  prosody  same  as  that  ofthe reference singing.  We perform neural network basedspectral mapping to convert the spectral features of speechto that of the singing voice.
              
+	     We   compare   three   speech-to-singing   conversion   ap-proaches,  namely,  zero-effort transfer,  speaker-dependentspectral mapping, and speaker-independent spectral map-ping.  In all the methods, we use the manually annotatedword boundaries and tandem features with DTW to obtainthe alignment between the frames of speech and singing.
               
             </p>
           </div>
